@@ -5,7 +5,7 @@ metadata:
   labels:
     name: peak6
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: peak6
