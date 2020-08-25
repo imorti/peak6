@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   annotations:
-    peak6.imorti.com: /
+    nginx.ingress.kubernetes.io/rewrite-target: /
   name: peak6
   namespace: default
 spec:
