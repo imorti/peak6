@@ -19,6 +19,9 @@ spec:
       containers:
       - name: peak6
         image: imorti/peak6:latest
+        env: 
+          - name: ENVIRONMENT
+            value: "production"
         ports:
           - containerPort: 5000
         imagePullPolicy: Always

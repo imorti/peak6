@@ -11,6 +11,6 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: peak6-svc
+          serviceName: peak6
           servicePort: 5000
         path: /
