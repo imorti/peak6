@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peak6
+  labels:
+    name: peak6
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: peak6
+  template:
+    metadata:
+      labels:
+        app: peak6
+    spec:
+      containers:
+      - name: peak6
+        image: imorti/peak6:latest
+        ports:
+          - containerPort: 5000
