@@ -16,3 +16,5 @@ For deployment to different environments, we'll use branches in Github repos map
 The dev, int, uat environments will utilize one cluster and different namespaces in the cluster while the prod environment will be on a separate VPC, cluster and infrastructure. This will address cost and utilization concerns. 
 
 
+# Current status
+Container is stored on my dockerhub at https://hub.docker.com/repository/docker/imorti/peak6

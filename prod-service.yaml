@@ -1,13 +1,14 @@
+--- 
 apiVersion: v1
 kind: Service
-metadata:
+metadata: 
+  labels: 
+    app: peak6
   name: peak6
-  labels:
+spec: 
+  ports: 
+  - port: 5000
+    targetPort: 5000
+  selector: 
     app: peak6
-spec:
-  ports:
-    - port: 5000
-  selector:
-    app: peak6
-  type: LoadBalancer
-  
+    type: LoadBalancer
