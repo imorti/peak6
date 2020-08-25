@@ -6,6 +6,8 @@ metadata:
     name: peak6
 spec:
   replicas: 4
+  strategy:
+    type: RollingUpdate
   selector:
     matchLabels:
       app: peak6
@@ -19,3 +21,8 @@ spec:
         image: imorti/peak6:latest
         ports:
           - containerPort: 5000
+        imagePullPolicy: Always
+        dnsPolicy: ClusterFirst
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30    

@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    peak6.imorti.com: /
+  name: peak6
+  namespace: default
+spec:
+  rules:
+  - host: peak6.imorti.com
+    http:
+      paths:
+      - backend:
+          serviceName: peak6-svc
+          servicePort: 5000
+        path: /
